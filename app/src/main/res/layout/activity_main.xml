@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/full_name"
+            android:fontFamily="@font/title"
+            android:textColor="@color/olive"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/vwDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/txtTitle"
+            android:background="@color/olive"
+            android:layout_marginHorizontal="10dp" />
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vwDivider"
+            app:srcCompat="@drawable/profile" />
+
+<!--        Education Card-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/crvEducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintTop_toBottomOf="@+id/imgProfile"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+                <TextView
+                    android:id="@+id/txtEducation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="@string/education"
+                    android:fontFamily="@font/heading"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    />
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@color/olive"/>
+                <TextView
+                    android:id="@+id/txtLewis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="@string/lewis_university"
+                    android:fontFamily="@font/heading"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtLewisDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:singleLine="false"
+                    android:text="@string/lu_details"
+                    android:fontFamily="@font/normal_text"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/txtCod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="@string/cod"
+                    android:fontFamily="@font/heading"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtCodDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:singleLine="false"
+                    android:text="@string/cod_details"
+                    android:fontFamily="@font/normal_text"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--        Experience Card-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/crvExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintTop_toBottomOf="@+id/crvEducation"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/txtExperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="@string/work_experience"
+                    android:fontFamily="@font/heading"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@color/olive"/>
+
+                <TextView
+                    android:id="@+id/txtWork1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="@string/work1"
+                    android:fontFamily="@font/heading"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtWork1Details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:singleLine="false"
+                    android:text="@string/work1_details"
+                    android:fontFamily="@font/normal_text"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/txtWork2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="@string/work2"
+                    android:fontFamily="@font/heading"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtWork2Details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="10dp"
+                    android:singleLine="false"
+                    android:text="@string/work2_details"
+                    android:fontFamily="@font/normal_text"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+<!--        Skills card-->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/crvSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintTop_toBottomOf="@+id/crvExperience">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/txtSkills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="@string/skills"
+                    android:fontFamily="@font/heading"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@color/olive"/>
+
+                <TextView
+                    android:id="@+id/txtProgramming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="@string/programming_languages"
+                    android:fontFamily="@font/heading"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtLangContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:singleLine="false"
+                    android:text="@string/language_content"
+                    android:fontFamily="@font/normal_text"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/txtFD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="@string/frameworks_databases"
+                    android:fontFamily="@font/heading"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtFDContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:singleLine="false"
+                    android:text="@string/fd_content"
+                    android:fontFamily="@font/normal_text"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtTools"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="@string/tools"
+                    android:fontFamily="@font/heading"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtToolsContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="10dp"
+                    android:singleLine="false"
+                    android:text="@string/tools_content"
+                    android:fontFamily="@font/normal_text"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btnLaunchApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/heading"
+            android:text="Proceed to App"
+            android:bottomRightRadius="10dp"
+            android:bottomLeftRadius="10dp"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crvSkills" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
