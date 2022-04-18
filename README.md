@@ -5,10 +5,6 @@ Android application that makes API calls to pull information about different cou
 <img src="https://github.com/itskar/Country-List-App/blob/master/CountryList.gif">
 </p>  
 
-This is an Android application that displays a summary of my portfolio on the first page. 
-The user can click on a button to go to the next page which contains a list of countries. 
-The user can then click on a cuntry to pull up details of the country. 
-
 ## Features
 * Displays a summary of my portfolio on the landing activity (page).
 * The user can scroll down and click on a button to go to the next activity which contains a list of countries. 
