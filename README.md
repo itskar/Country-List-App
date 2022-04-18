@@ -2,7 +2,7 @@
 
 Android application that makes API calls to pull information about different countries. 
 
-![This is an image](CountryList.gif)
+<img src="https://github.com/itskar/Country-List-App/blob/master/CountryList.gif" width="50%" height="50%">
 
 This is an Android application that displays a summary of my portfolio on the first page. 
 The user can click on a button to go to the next page which contains a list of countries. 
