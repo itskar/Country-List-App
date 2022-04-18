@@ -14,9 +14,9 @@ Android application that makes API calls to pull information about different cou
 
 ## Technologies
 ```
+ANDROID STUDIO
 JAVA
 XML
 VOLLEY HTTP LIBRARY
 MATERIAL DESIGN
-FIGMA
 ```
