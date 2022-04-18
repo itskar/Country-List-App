@@ -1,7 +1,7 @@
 # Country-List-App
 
 Android application that makes API calls to pull information about different countries. 
-<p align="ceneter">
+<p align="center">
 <img src="https://github.com/itskar/Country-List-App/blob/master/CountryList.gif">
 </p>  
 
